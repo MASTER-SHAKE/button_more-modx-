@@ -1,0 +1,13 @@
+<?php
+if(!isset($parent)){
+    return;
+}
+$res = $modx->getCollection('modResource', array('parent' => $parent));
+print ceil(count($res) / 6);
+<?php
+
+
+$id = 131;
+$val = $modx->resource->getTVValue(19);
+$val = $modx->resource->getTVValue($id);
+print $val;
